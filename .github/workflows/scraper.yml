@@ -26,7 +26,7 @@ jobs:
 
     - name: Ensure Playwright Browsers are Installed
       run: |
-        # Refresh the package lists first to prevent installation candidate errors
+        # Force a refresh of the apt package tree before triggering installation
         sudo apt-get update
         python -m playwright install chromium --with-deps
 
